@@ -33,3 +33,5 @@ dist-ssr
 
 # Vercel output
 .vercel/
+
+.vercel

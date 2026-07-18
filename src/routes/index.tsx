@@ -52,25 +52,26 @@ import blackGermanShepherdImg from "@/assets/black-german-shepherd.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
-    title: "Buy Puppies in Delhi NCR | Puppy Kennal - 19+ Premium Breeds",
+    title: "Buy Puppies in Delhi NCR | Puppy Palace — 19+ Premium Breeds | Call +91 95555 44416",
     meta: [
       {
         name: "description",
         content:
-          "Buy healthy, vaccinated puppies in Delhi, Gurgaon, Noida, Ghaziabad & Faridabad. 19+ premium breeds — Golden Retriever, Labrador, Pomeranian, Shih Tzu, Husky, German Shepherd & more. WhatsApp +91 98701 66623 for instant reply.",
+          "🐾 Buy healthy, vaccinated & ethically raised puppies in Delhi NCR. 19+ premium breeds — Golden Retriever, Labrador, Pomeranian, Shih Tzu, Husky, German Shepherd & more. Home delivery in Delhi, Gurgaon, Noida, Faridabad & Ghaziabad. Call +91 95555 44416.",
       },
       {
         name: "keywords",
         content:
-          "buy puppies Delhi NCR, puppies for sale Delhi, dog for sale Delhi, Golden Retriever puppy Delhi, Labrador puppy Noida, Pomeranian puppy Gurgaon, Shih Tzu puppy Delhi, German Shepherd puppy Delhi NCR, Siberian Husky puppy Delhi, Beagle puppy Delhi, French Bulldog puppy Delhi, Rottweiler puppy Delhi, Pug puppy Delhi, Toy Poodle puppy Delhi, Maltese puppy Delhi, puppy home delivery Delhi NCR",
+          "buy puppies Delhi NCR, puppies for sale Delhi, dog for sale Delhi, puppy shop near me Delhi, Golden Retriever puppy Delhi price, Labrador puppy Noida, Pomeranian puppy Gurgaon, Shih Tzu puppy Delhi, German Shepherd puppy Delhi NCR, Siberian Husky puppy Delhi, Beagle puppy Delhi, French Bulldog puppy Delhi, Rottweiler puppy Delhi, Pug puppy Delhi, Toy Poodle puppy Delhi, Maltese puppy Delhi, Cocker Spaniel puppy Delhi, Dachshund puppy Delhi, Tibetan Mastiff puppy Delhi, Cavalier King Charles puppy Delhi, puppy home delivery Delhi NCR, KCI registered puppies Delhi, certified puppy breeder Delhi, healthy vaccinated puppies Delhi, Puppy Palace Delhi, best puppy seller Delhi NCR, puppy delivery Gurgaon, puppy delivery Noida, puppy delivery Faridabad, puppy delivery Ghaziabad",
       },
-      { property: "og:title", content: "Buy Puppies in Delhi NCR | Puppy Kennal - 19+ Premium Breeds" },
+      { property: "og:title", content: "Buy Puppies in Delhi NCR | Puppy Palace — 19+ Premium Breeds" },
       {
         property: "og:description",
         content:
-          "Healthy, vaccinated, ethically raised puppies from trusted breeders across Delhi NCR. Home delivery available.",
+          "Healthy, vaccinated, ethically raised puppies from trusted breeders across Delhi NCR. 19+ premium breeds. Home delivery available. Call +91 95555 44416.",
       },
       { property: "og:url", content: "https://www.thepuppypoint.co.in/" },
+      { property: "og:image", content: "https://www.thepuppypoint.co.in/og-image.jpg" },
     ],
     links: [
       { rel: "canonical", href: "https://www.thepuppypoint.co.in/" },
@@ -223,7 +224,7 @@ const testimonials = [
     name: "Rohit Sharma",
     city: "Delhi",
     puppy: "White Husky",
-    text: "Got this gorgeous white Husky pup from Puppy Kennal and it was love at first sight! Super healthy, full of energy, and the team made the whole process so smooth. Couldn't be happier!",
+    text: "Got this gorgeous white Husky pup from Puppy Palace and it was love at first sight! Super healthy, full of energy, and the team made the whole process so smooth. Couldn't be happier!",
     rating: 5,
     img: testimonial1,
     imgPosition: "object-center",
@@ -232,7 +233,7 @@ const testimonials = [
     name: "Deepak Verma",
     city: "Dwarka, Delhi",
     puppy: "Rottweiler",
-    text: "Brought home two Rottweiler pups from Puppy Kennal and both are absolutely perfect. Well-vaccinated, strong, and so playful. The team's after-sale support has been exceptional.",
+    text: "Brought home two Rottweiler pups from Puppy Palace and both are absolutely perfect. Well-vaccinated, strong, and so playful. The team's after-sale support has been exceptional.",
     rating: 5,
     img: testimonial2,
     imgPosition: "object-top",
@@ -250,7 +251,7 @@ const testimonials = [
     name: "Priya Kapoor",
     city: "Noida",
     puppy: "Cocker Spaniel",
-    text: "My Cocker Spaniel is the most beautiful and loving pup! Puppy Kennal team helped me choose the right breed for my lifestyle. Super responsive, caring, and truly passionate about dogs!",
+    text: "My Cocker Spaniel is the most beautiful and loving pup! Puppy Palace team helped me choose the right breed for my lifestyle. Super responsive, caring, and truly passionate about dogs!",
     rating: 5,
     img: testimonial4,
     imgPosition: "object-top",
@@ -259,7 +260,7 @@ const testimonials = [
     name: "Suresh & Isha",
     city: "Delhi",
     puppy: "Labrador",
-    text: "Got two Labrador puppies for our family and they've been an absolute blessing. Both arrived healthy, vaccinated, and full of life. Puppy Kennal is genuinely the best in Delhi NCR!",
+    text: "Got two Labrador puppies for our family and they've been an absolute blessing. Both arrived healthy, vaccinated, and full of life. Puppy Palace is genuinely the best in Delhi NCR!",
     rating: 5,
     img: testimonial5,
     imgPosition: "object-top",
@@ -281,7 +282,7 @@ const faqs = [
   },
   {
     q: "Are the puppies vaccinated and health certified?",
-    a: "Yes, every puppy from Puppy Kennal is fully vaccinated as per their age schedule, dewormed, and vet-checked by certified veterinarians before being handed over. You receive a complete vaccination booklet and health certificate with your puppy.",
+    a: "Yes, every puppy from Puppy Palace is fully vaccinated as per their age schedule, dewormed, and vet-checked by certified veterinarians before being handed over. You receive a complete vaccination booklet and health certificate with your puppy.",
   },
   {
     q: "Do you deliver puppies at home in Delhi NCR?",
@@ -289,7 +290,7 @@ const faqs = [
   },
   {
     q: "What is the price of puppies in Delhi NCR?",
-    a: "Puppy prices vary by breed, bloodline, and availability. We offer competitive, transparent pricing with no hidden charges. WhatsApp or call us at +91 98701 66623 for the latest pricing on any specific breed.",
+    a: "Puppy prices vary by breed, bloodline, and availability. We offer competitive, transparent pricing with no hidden charges. WhatsApp or call us at +91 95555 44416 for the latest pricing on any specific breed.",
   },
   {
     q: "Do you provide after-adoption support?",
@@ -301,7 +302,7 @@ const faqs = [
   },
   {
     q: "How do I enquire about a specific breed?",
-    a: "Simply WhatsApp us at +91 98701 66623 or call us directly. You can also fill out the enquiry form on this page and we'll respond within minutes. Mention your preferred breed and we'll guide you through availability and pricing instantly.",
+    a: "Simply WhatsApp us at +91 95555 44416 or call us directly. You can also fill out the enquiry form on this page and we'll respond within minutes. Mention your preferred breed and we'll guide you through availability and pricing instantly.",
   },
   {
     q: "What areas in Delhi NCR do you serve?",
@@ -313,10 +314,17 @@ const faqs = [
 function JsonLdSchemas() {
   const petStoreSchema = {
     "@context": "https://schema.org",
-    "@type": "PetStore",
-    name: "Puppy Kennal",
+    "@type": ["PetStore", "LocalBusiness"],
+    name: "Puppy Palace",
+    alternateName: "Puppy Palace Delhi NCR",
     url: "https://www.thepuppypoint.co.in",
-    logo: "https://www.thepuppypoint.co.in/og-image.jpg",
+    logo: {
+      "@type": "ImageObject",
+      url: "https://www.thepuppypoint.co.in/og-image.jpg",
+      width: 1200,
+      height: 630,
+    },
+    image: "https://www.thepuppypoint.co.in/og-image.jpg",
     description:
       "Premium puppy boutique in Delhi NCR offering 19+ breeds of healthy, vaccinated, ethically raised puppies. Home delivery across Delhi, Gurgaon, Noida, Faridabad and Ghaziabad.",
     telephone: "+91-95555-44416",
@@ -326,7 +334,13 @@ function JsonLdSchemas() {
       streetAddress: "Sector 12",
       addressLocality: "Dwarka",
       addressRegion: "Delhi",
+      postalCode: "110075",
       addressCountry: "IN",
+    },
+    geo: {
+      "@type": "GeoCoordinates",
+      latitude: 28.6139,
+      longitude: 77.2090,
     },
     areaServed: [
       { "@type": "City", name: "Delhi" },
@@ -334,16 +348,115 @@ function JsonLdSchemas() {
       { "@type": "City", name: "Noida" },
       { "@type": "City", name: "Faridabad" },
       { "@type": "City", name: "Ghaziabad" },
+      { "@type": "City", name: "Greater Noida" },
     ],
     openingHours: "Mo-Su 09:00-21:00",
-    sameAs: ["https://wa.me/919555544416"],
+    openingHoursSpecification: {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      opens: "09:00",
+      closes: "21:00",
+    },
+    sameAs: [
+      "https://wa.me/919555544416",
+      "https://www.thepuppypoint.co.in/",
+    ],
     priceRange: "₹₹-₹₹₹",
+    currenciesAccepted: "INR",
+    paymentAccepted: "Cash, UPI, Bank Transfer",
     aggregateRating: {
       "@type": "AggregateRating",
       ratingValue: "4.9",
       reviewCount: "2000",
       bestRating: "5",
+      worstRating: "1",
     },
+    hasMap: "https://maps.google.com/?q=Dwarka+Sector+12+Delhi",
+  };
+
+  const organizationSchema = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    name: "Puppy Palace",
+    alternateName: "Puppy Palace Delhi NCR",
+    url: "https://www.thepuppypoint.co.in",
+    logo: "https://www.thepuppypoint.co.in/og-image.jpg",
+    description: "Premium puppy boutique in Delhi NCR. 19+ ethically raised, vaccinated breeds with home delivery.",
+    telephone: "+91-95555-44416",
+    email: "contact@thepuppypoint.co.in",
+    address: {
+      "@type": "PostalAddress",
+      addressLocality: "Delhi",
+      addressRegion: "Delhi NCR",
+      addressCountry: "IN",
+    },
+    contactPoint: [
+      {
+        "@type": "ContactPoint",
+        telephone: "+91-95555-44416",
+        contactType: "customer service",
+        availableLanguage: ["English", "Hindi"],
+        areaServed: "IN",
+        contactOption: "TollFree",
+      },
+      {
+        "@type": "ContactPoint",
+        telephone: "+91-95555-44416",
+        contactType: "sales",
+        availableLanguage: ["English", "Hindi"],
+        areaServed: "IN",
+      },
+    ],
+    sameAs: [
+      "https://wa.me/919555544416",
+    ],
+  };
+
+  const websiteSchema = {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    name: "Puppy Palace",
+    alternateName: "Puppy Palace Delhi NCR — Premium Puppies for Sale",
+    url: "https://www.thepuppypoint.co.in",
+    description: "Buy healthy, vaccinated puppies in Delhi NCR. 19+ premium breeds with home delivery.",
+    inLanguage: "en-IN",
+    publisher: {
+      "@type": "Organization",
+      name: "Puppy Palace",
+    },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: {
+        "@type": "EntryPoint",
+        urlTemplate: "https://www.thepuppypoint.co.in/?q={search_term_string}",
+      },
+      "query-input": "required name=search_term_string",
+    },
+  };
+
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      {
+        "@type": "ListItem",
+        position: 1,
+        name: "Home",
+        item: "https://www.thepuppypoint.co.in/",
+      },
+      {
+        "@type": "ListItem",
+        position: 2,
+        name: "Puppies for Sale Delhi NCR",
+        item: "https://www.thepuppypoint.co.in/#breeds",
+      },
+      {
+        "@type": "ListItem",
+        position: 3,
+        name: "Contact Us",
+        item: "https://www.thepuppypoint.co.in/#contact",
+      },
+    ],
   };
 
   const itemListSchema = {
@@ -357,7 +470,7 @@ function JsonLdSchemas() {
       position: i + 1,
       name: `${b.name} Puppy for Sale in Delhi NCR`,
       description: b.desc,
-      url: "https://www.thepuppypoint.co.in/",
+      url: "https://www.thepuppypoint.co.in/#breeds",
     })),
   };
 
@@ -379,6 +492,18 @@ function JsonLdSchemas() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(petStoreSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(organizationSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
       <script
         type="application/ld+json"
@@ -581,8 +706,8 @@ function Nav() {
       <div className="mx-auto max-w-7xl px-4">
         <div className={`flex items-center justify-between rounded-full px-5 py-3 ${scrolled ? "glass-strong" : "glass"}`}>
           <a href="#top" onClick={close} className="flex items-center gap-2">
-            <img src={logoImg} alt="Puppy Kennal logo" className="h-10 w-10 rounded-full object-cover shadow-glow" />
-            <span className="font-display text-base font-bold tracking-tight sm:text-lg">Puppy Kennal</span>
+            <img src={logoImg} alt="Puppy Palace logo" className="h-10 w-10 rounded-full object-cover shadow-glow" />
+            <span className="font-display text-base font-bold tracking-tight sm:text-lg">Puppy Palace</span>
           </a>
           <nav className="hidden items-center gap-7 text-sm font-medium text-muted-foreground md:flex">
             <a href="#breeds" className="hover:text-foreground transition">Breeds</a>
@@ -738,7 +863,7 @@ function Hero() {
           <div className="relative overflow-hidden rounded-[2rem] glass-strong p-2 shadow-glow md:rounded-[2.5rem] md:p-3">
             <img
               src={heroPuppy}
-              alt="Premium puppy from Puppy Kennal Delhi NCR"
+              alt="Premium puppy from Puppy Palace Delhi NCR"
               width={1600}
               height={1200}
               className="h-[280px] w-full rounded-[1.5rem] object-cover sm:h-[360px] md:h-[480px] md:rounded-[2rem] lg:h-[560px]"
@@ -862,7 +987,7 @@ function WhyUs() {
     <section id="why" className="relative py-24">
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-gold-soft/30 to-transparent" />
       <SectionHeader
-        eyebrow="Why Puppy Kennal"
+        eyebrow="Why Puppy Palace"
         title={<>Premium Care. <span className="text-gradient-gold">Lifetime Promise.</span></>}
         sub="Every puppy is loved, vetted, and supported by experts who care as much as you do."
       />
@@ -907,7 +1032,7 @@ function About() {
           <div className="overflow-hidden rounded-[2.5rem] glass-strong p-3 shadow-glow">
             <img
               src={aboutImg}
-              alt="Happy family with their new puppy"
+              alt="Puppy Palace — ethically raised puppies for sale in Delhi NCR, happy families with their new puppies"
               loading="lazy"
               width={1200}
               height={1200}
@@ -934,10 +1059,10 @@ function About() {
         >
           <span className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">About Us</span>
           <h2 className="mt-3 font-display text-4xl font-bold leading-tight md:text-5xl">
-            About <span className="text-gradient-gold">Puppy Kennal</span>
+            About <span className="text-gradient-gold">Puppy Palace</span>
           </h2>
           <p className="mt-5 text-lg text-muted-foreground">
-            We are passionate about connecting loving families with healthy, happy, and well-socialized puppies. Puppy Kennal is committed to ethical breeding practices, transparency, and providing lifelong support to puppy owners across Delhi NCR.
+            We are passionate about connecting loving families with healthy, happy, and well-socialized puppies. Puppy Palace is committed to ethical breeding practices, transparency, and providing lifelong support to puppy owners across Delhi NCR.
           </p>
 
           <div className="mt-10 grid grid-cols-3 gap-4">
@@ -1279,7 +1404,7 @@ function Contact() {
             const message = (fd.get("message") as string).trim();
 
             const lines = [
-              `🐾 *New Puppy Enquiry - Puppy Kennal*`,
+              `🐾 *New Puppy Enquiry - Puppy Palace*`,
               ``,
               `👤 *Name:* ${name}`,
               `📞 *Phone:* ${phone}`,
@@ -1292,7 +1417,7 @@ function Contact() {
               .filter((l) => l !== null)
               .join("\n");
 
-            const waUrl = `https://wa.me/919870166623?text=${encodeURIComponent(lines)}`;
+            const waUrl = `https://wa.me/919555544416?text=${encodeURIComponent(lines)}`;
             setSent(true);
             // Small delay so user sees success state before WhatsApp opens
             setTimeout(() => {
@@ -1395,11 +1520,11 @@ function Footer() {
       <div className="mx-auto grid max-w-7xl grid-cols-1 gap-10 px-4 py-14 md:grid-cols-4">
         <div className="md:col-span-2">
           <div className="flex items-center gap-2">
-            <img src={logoImg} alt="Puppy Kennal logo" className="h-10 w-10 rounded-full object-cover shadow-glow" />
-            <span className="font-display text-xl font-bold">Puppy Kennal</span>
+            <img src={logoImg} alt="Puppy Palace logo" className="h-10 w-10 rounded-full object-cover shadow-glow" />
+            <span className="font-display text-xl font-bold">Puppy Palace</span>
           </div>
           <p className="mt-4 max-w-md text-sm text-muted-foreground">
-            A premium puppy kennal connecting Delhi NCR families with healthy, ethically raised companions for life.
+            A premium Puppy Palace connecting Delhi NCR families with healthy, ethically raised companions for life.
           </p>
           <div className="mt-5 flex gap-2">
             <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 rounded-full bg-foreground px-4 py-2 text-xs font-semibold text-background">
@@ -1432,7 +1557,7 @@ function Footer() {
       </div>
       <div className="border-t border-border/60">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-muted-foreground md:flex-row">
-          <div>© {new Date().getFullYear()} Puppy Kennal. Made with ♥ in Delhi NCR.</div>
+          <div>© {new Date().getFullYear()} Puppy Palace. Made with ♥ in Delhi NCR.</div>
           <div>Healthy puppies • Ethical breeders • Lifetime support</div>
         </div>
       </div>

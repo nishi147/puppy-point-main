@@ -1,4 +1,19 @@
 User-agent: *
 Allow: /
+Allow: /assets/
+Allow: /og-image.jpg
+
+User-agent: Googlebot
+Allow: /
+Allow: /assets/
+Crawl-delay: 1
+
+User-agent: Googlebot-Image
+Allow: /assets/
+Allow: /og-image.jpg
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
 
 Sitemap: https://www.thepuppypoint.co.in/sitemap.xml
