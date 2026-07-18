@@ -16,4 +16,4 @@ User-agent: Bingbot
 Allow: /
 Crawl-delay: 2
 
-Sitemap: https://www.thepuppypoint.co.in/sitemap.xml
+Sitemap: https://puppy-point-main.vercel.app/sitemap.xml
