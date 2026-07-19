@@ -925,7 +925,7 @@ function Breeds() {
 function BreedCard({ breed, index }: { breed: (typeof breeds)[number]; index: number }) {
   const isVowel = /^[aeiou]/i.test(breed.name);
   const message = `Hi! I am interested in ${isVowel ? "an" : "a"} ${breed.name} puppy.`;
-  const breedWaUrl = `https://wa.me/919870166623?text=${encodeURIComponent(message)}`;
+  const breedWaUrl = `https://wa.me/919555544416?text=${encodeURIComponent(message)}`;
 
   return (
     <motion.article
