@@ -810,7 +810,7 @@ function Hero() {
             transition={{ delay: 0.5 }}
             className="mt-4 max-w-xl text-base text-muted-foreground md:mt-6 md:text-lg"
           >
-            Healthy, vaccinated, ethically raised puppies from trusted breeders. Bring home happiness today.
+            Healthy, vaccinated &amp; KCI registered dogs for sale in Delhi NCR. Buy a puppy from trusted breeders — home delivery across Delhi, Gurgaon, Noida, Faridabad &amp; Ghaziabad.
           </motion.p>
 
           <motion.div
@@ -909,9 +909,9 @@ function Breeds() {
   return (
     <section id="breeds" className="relative py-16 md:py-24">
       <SectionHeader
-        eyebrow="Our Puppies"
-        title={<>Meet Your Future <span className="text-gradient-gold">Best Friend</span></>}
-        sub="Hand-picked, healthy, and ready to be loved — explore 19+ premium breeds available across Delhi NCR."
+        eyebrow="Puppies for Sale in Delhi NCR"
+        title={<>Buy a Dog in <span className="text-gradient-gold">Delhi NCR</span></>}
+        sub="19+ premium breeds for sale in Delhi NCR — Golden Retriever, Labrador, Husky, Shih Tzu &amp; more. All vaccinated, vet-checked &amp; available for home delivery."
       />
       <div className="mx-auto mt-10 grid max-w-7xl grid-cols-2 gap-3 px-3 sm:gap-5 sm:px-4 md:mt-14 md:gap-6 lg:grid-cols-3">
         {breeds.map((b, i) => (
@@ -987,9 +987,9 @@ function WhyUs() {
     <section id="why" className="relative py-24">
       <div className="absolute inset-0 -z-10 bg-gradient-to-b from-transparent via-gold-soft/30 to-transparent" />
       <SectionHeader
-        eyebrow="Why Puppy Palace"
+        eyebrow="Why Buy From Puppy Palace Delhi NCR"
         title={<>Premium Care. <span className="text-gradient-gold">Lifetime Promise.</span></>}
-        sub="Every puppy is loved, vetted, and supported by experts who care as much as you do."
+        sub="Every puppy for sale in Delhi NCR is vet-checked, vaccinated &amp; dewormed. KCI registered breeders. Safe home delivery across Delhi, Gurgaon &amp; Noida."
       />
       <div className="mx-auto mt-14 grid max-w-7xl grid-cols-1 gap-5 px-4 sm:grid-cols-2 lg:grid-cols-3">
         {whyUs.map(({ icon: Icon, title, desc }, i) => (
@@ -1062,7 +1062,7 @@ function About() {
             About <span className="text-gradient-gold">Puppy Palace</span>
           </h2>
           <p className="mt-5 text-lg text-muted-foreground">
-            We are passionate about connecting loving families with healthy, happy, and well-socialized puppies. Puppy Palace is committed to ethical breeding practices, transparency, and providing lifelong support to puppy owners across Delhi NCR.
+            Puppy Palace is Delhi NCR's most trusted destination to buy puppies and dogs for sale. We connect loving families with healthy, vaccinated, KCI registered puppies — with safe home delivery across Delhi, Gurgaon, Noida, Faridabad and Ghaziabad. Ethical breeders, transparent pricing, and lifelong expert support.
           </p>
 
           <div className="mt-10 grid grid-cols-3 gap-4">
@@ -1337,12 +1337,12 @@ function Contact() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
         >
-          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Get In Touch</span>
+          <span className="text-sm font-semibold uppercase tracking-[0.2em] text-gold">Buy Puppies in Delhi NCR</span>
           <h2 className="mt-3 font-display text-4xl font-bold leading-tight md:text-5xl">
             Bring Home Your <span className="text-gradient-gold">New Best Friend</span>
           </h2>
           <p className="mt-4 text-muted-foreground">
-            We'd love to help you find the perfect puppy. Reach out by phone, WhatsApp, or the form — we usually reply within minutes.
+            Looking to buy a puppy or dog for sale in Delhi NCR? Call or WhatsApp us for breed availability, price &amp; same-day home delivery across Delhi, Gurgaon, Noida, Faridabad &amp; Ghaziabad.
           </p>
 
           <div className="mt-8 space-y-3">
@@ -1524,7 +1524,7 @@ function Footer() {
             <span className="font-display text-xl font-bold">Puppy Palace</span>
           </div>
           <p className="mt-4 max-w-md text-sm text-muted-foreground">
-            A premium Puppy Palace connecting Delhi NCR families with healthy, ethically raised companions for life.
+            Delhi NCR's trusted puppy &amp; dog sale boutique. Buy healthy, vaccinated, KCI registered puppies with home delivery across Delhi, Gurgaon, Noida, Faridabad &amp; Ghaziabad.
           </p>
           <div className="mt-5 flex gap-2">
             <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 rounded-full bg-foreground px-4 py-2 text-xs font-semibold text-background">
@@ -1557,8 +1557,8 @@ function Footer() {
       </div>
       <div className="border-t border-border/60">
         <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-3 px-4 py-5 text-xs text-muted-foreground md:flex-row">
-          <div>© {new Date().getFullYear()} Puppy Palace. Made with ♥ in Delhi NCR.</div>
-          <div>Healthy puppies • Ethical breeders • Lifetime support</div>
+          <div>© {new Date().getFullYear()} Puppy Palace. Buy puppies &amp; dogs for sale in Delhi NCR.</div>
+          <div>Vaccinated puppies • KCI registered breeders • Home delivery Delhi NCR</div>
         </div>
       </div>
     </footer>
