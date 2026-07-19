@@ -70,11 +70,11 @@ export const Route = createFileRoute("/")({
         content:
           "Healthy, vaccinated, ethically raised puppies from trusted breeders across Delhi NCR. 19+ premium breeds. Home delivery available. Call +91 95555 44416.",
       },
-      { property: "og:url", content: "https://puppy-point-main.vercel.app/" },
-      { property: "og:image", content: "https://puppy-point-main.vercel.app/og-image.jpg" },
+      { property: "og:url", content: "https://thepuppypalace.store/" },
+      { property: "og:image", content: "https://thepuppypalace.store/og-image.jpg" },
     ],
     links: [
-      { rel: "canonical", href: "https://puppy-point-main.vercel.app/" },
+      { rel: "canonical", href: "https://thepuppypalace.store/" },
     ],
   }),
   component: Index,
@@ -317,14 +317,14 @@ function JsonLdSchemas() {
     "@type": ["PetStore", "LocalBusiness"],
     name: "Puppy Palace",
     alternateName: "Puppy Palace Delhi NCR",
-    url: "https://puppy-point-main.vercel.app",
+    url: "https://thepuppypalace.store",
     logo: {
       "@type": "ImageObject",
-      url: "https://puppy-point-main.vercel.app/og-image.jpg",
+      url: "https://thepuppypalace.store/og-image.jpg",
       width: 1200,
       height: 630,
     },
-    image: "https://puppy-point-main.vercel.app/og-image.jpg",
+    image: "https://thepuppypalace.store/og-image.jpg",
     description:
       "Premium puppy boutique in Delhi NCR offering 19+ breeds of healthy, vaccinated, ethically raised puppies. Home delivery across Delhi, Gurgaon, Noida, Faridabad and Ghaziabad.",
     telephone: "+91-95555-44416",
@@ -359,7 +359,7 @@ function JsonLdSchemas() {
     },
     sameAs: [
       "https://wa.me/919555544416",
-      "https://puppy-point-main.vercel.app/",
+      "https://thepuppypalace.store/",
     ],
     priceRange: "₹₹-₹₹₹",
     currenciesAccepted: "INR",
@@ -379,8 +379,8 @@ function JsonLdSchemas() {
     "@type": "Organization",
     name: "Puppy Palace",
     alternateName: "Puppy Palace Delhi NCR",
-    url: "https://puppy-point-main.vercel.app",
-    logo: "https://puppy-point-main.vercel.app/og-image.jpg",
+    url: "https://thepuppypalace.store",
+    logo: "https://thepuppypalace.store/og-image.jpg",
     description: "Premium puppy boutique in Delhi NCR. 19+ ethically raised, vaccinated breeds with home delivery.",
     telephone: "+91-95555-44416",
     email: "contact@thepuppypoint.co.in",
@@ -417,7 +417,7 @@ function JsonLdSchemas() {
     "@type": "WebSite",
     name: "Puppy Palace",
     alternateName: "Puppy Palace Delhi NCR — Premium Puppies for Sale",
-    url: "https://puppy-point-main.vercel.app",
+    url: "https://thepuppypalace.store",
     description: "Buy healthy, vaccinated puppies in Delhi NCR. 19+ premium breeds with home delivery.",
     inLanguage: "en-IN",
     publisher: {
@@ -428,7 +428,7 @@ function JsonLdSchemas() {
       "@type": "SearchAction",
       target: {
         "@type": "EntryPoint",
-        urlTemplate: "https://puppy-point-main.vercel.app/?q={search_term_string}",
+        urlTemplate: "https://thepuppypalace.store/?q={search_term_string}",
       },
       "query-input": "required name=search_term_string",
     },
@@ -442,19 +442,19 @@ function JsonLdSchemas() {
         "@type": "ListItem",
         position: 1,
         name: "Home",
-        item: "https://puppy-point-main.vercel.app/",
+        item: "https://thepuppypalace.store/",
       },
       {
         "@type": "ListItem",
         position: 2,
         name: "Puppies for Sale Delhi NCR",
-        item: "https://puppy-point-main.vercel.app/#breeds",
+        item: "https://thepuppypalace.store/#breeds",
       },
       {
         "@type": "ListItem",
         position: 3,
         name: "Contact Us",
-        item: "https://puppy-point-main.vercel.app/#contact",
+        item: "https://thepuppypalace.store/#contact",
       },
     ],
   };
@@ -470,7 +470,7 @@ function JsonLdSchemas() {
       position: i + 1,
       name: `${b.name} Puppy for Sale in Delhi NCR`,
       description: b.desc,
-      url: "https://puppy-point-main.vercel.app/#breeds",
+      url: "https://thepuppypalace.store/#breeds",
     })),
   };
 
