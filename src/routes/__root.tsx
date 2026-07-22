@@ -7,7 +7,7 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
-import { clarity } from "clarity-js";
+
 import { useEffect, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
@@ -157,14 +157,21 @@ function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   useEffect(() => {
-    clarity.start({
-      projectId: "xq9eto0ep1",
-      upload: "https://www.clarity.ms/collect",
-      track: true,
-      content: true,
+    let cleanupCalled = false;
+    let clarityRef: typeof import("clarity-js")["clarity"] | null = null;
+    import("clarity-js").then(({ clarity }) => {
+      if (cleanupCalled) return;
+      clarityRef = clarity;
+      clarity.start({
+        projectId: "xq9eto0ep1",
+        upload: "https://www.clarity.ms/collect",
+        track: true,
+        content: true,
+      });
     });
     return () => {
-      clarity.stop();
+      cleanupCalled = true;
+      clarityRef?.stop();
     };
   }, []);
 
