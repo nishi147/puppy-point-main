@@ -840,7 +840,7 @@ function Hero() {
             </a>
             <a
               href={`tel:${PHONE}`}
-              className="inline-flex items-center gap-2 rounded-full bg-foreground px-5 py-3 text-sm font-semibold text-background shadow-soft transition-transform hover:scale-105 md:px-6 md:py-3.5"
+              className="inline-flex items-center gap-2 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 px-5 py-3 text-sm font-semibold text-white shadow-soft transition-transform hover:scale-105 md:px-6 md:py-3.5"
             >
               <Phone className="h-4 w-4" />
               Call Now
