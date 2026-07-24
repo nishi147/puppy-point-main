@@ -132,14 +132,14 @@ function RootShell({ children }: { children: ReactNode }) {
     <html lang="en-IN" prefix="og: https://ogp.me/ns#">
       <head>
         {/* Google Ads tag */}
-        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18334380792" />
+        <script async src="https://www.googletagmanager.com/gtag/js?id=AW-18343830618" />
         <script
           dangerouslySetInnerHTML={{
             __html: `
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
-  gtag('config', 'AW-18334380792');
+  gtag('config', 'AW-18343830618');
 `,
           }}
         />
