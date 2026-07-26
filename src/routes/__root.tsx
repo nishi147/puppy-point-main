@@ -143,6 +143,27 @@ function RootShell({ children }: { children: ReactNode }) {
 `,
           }}
         />
+        {/* Google Ads conversion event snippet */}
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+function gtag_report_conversion(url) {
+  var callback = function () {
+    if (typeof(url) != 'undefined') {
+      window.location = url;
+    }
+  };
+  gtag('event', 'conversion', {
+    'send_to': 'AW-18334380792/-U61CIP649YcEPjlwaZE',
+    'value': 1.0,
+    'currency': 'INR',
+    'event_callback': callback
+  });
+  return false;
+}
+`,
+          }}
+        />
         <HeadContent />
       </head>
       <body>
