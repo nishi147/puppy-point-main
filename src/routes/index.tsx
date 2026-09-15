@@ -581,13 +581,11 @@ function Faq() {
       >
         <p className="text-muted-foreground text-sm mb-4">Still have questions? We're here 7 days a week.</p>
         <a
-          href="https://wa.me/919870166623?text=Hi!%20I%20have%20a%20question%20about%20buying%20a%20puppy%20in%20Delhi%20NCR."
-          target="_blank"
-          rel="noopener"
-          className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:scale-105"
+          href={`tel:${PHONE}`}
+          className="inline-flex items-center gap-2 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 px-6 py-3 text-sm font-semibold text-white shadow-soft transition hover:scale-105"
         >
-          <MessageCircle className="h-4 w-4" />
-          Ask on WhatsApp
+          <Phone className="h-4 w-4" />
+          Call Us Now
         </a>
       </motion.div>
     </section>
@@ -827,17 +825,7 @@ function Hero() {
               View Puppies
               <span className="absolute inset-0 -z-0 bg-gradient-to-r from-gold/0 via-gold/30 to-gold/0 opacity-0 transition group-hover:opacity-100" />
             </a>
-            <a
-              href={WA}
-              target="_blank"
-              rel="noopener"
-              className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-5 py-3 text-sm font-semibold text-white shadow-soft transition-transform hover:scale-105 md:px-6 md:py-3.5"
-            >
-              <svg className="h-4 w-4" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                <path d="M16 0C7.163 0 0 7.163 0 16c0 2.826.736 5.484 2.027 7.796L0 32l8.425-2.01A15.938 15.938 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.766-1.847l-.486-.29-4.999 1.193 1.21-4.862-.315-.5A13.267 13.267 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.279-9.875c-.398-.2-2.355-1.162-2.72-1.295-.366-.133-.632-.2-.898.2-.266.399-1.031 1.295-1.264 1.561-.232.266-.465.3-.863.1-.398-.2-1.68-.619-3.2-1.974-1.183-1.055-1.981-2.358-2.213-2.757-.232-.399-.025-.615.174-.814.179-.178.398-.465.598-.698.2-.232.266-.399.399-.665.132-.266.066-.499-.033-.698-.1-.2-.898-2.163-1.23-2.961-.324-.778-.653-.673-.898-.686l-.765-.013c-.266 0-.699.1-1.065.499-.366.399-1.397 1.365-1.397 3.328s1.43 3.86 1.629 4.126c.2.266 2.814 4.295 6.818 6.025.953.412 1.696.658 2.275.842.956.305 1.826.262 2.515.159.767-.115 2.355-.963 2.688-1.893.333-.93.333-1.727.232-1.893-.1-.166-.366-.266-.765-.465z"/>
-              </svg>
-              Chat on WhatsApp
-            </a>
+
             <a
               href={`tel:${PHONE}`}
               className="inline-flex items-center gap-2 rounded-full bg-gradient-to-br from-amber-500 to-yellow-600 px-5 py-3 text-sm font-semibold text-white shadow-soft transition-transform hover:scale-105 md:px-6 md:py-3.5"
@@ -974,15 +962,7 @@ function BreedCard({ breed, index }: { breed: (typeof breeds)[number]; index: nu
             <Phone className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
             <span className="hidden xs:inline">Call</span><span className="xs:hidden">📞</span>
           </a>
-          <a
-            href={breedWaUrl}
-            target="_blank"
-            rel="noopener"
-            className="flex flex-1 items-center justify-center gap-1 rounded-full bg-whatsapp px-2 py-2 text-[10px] font-semibold text-white transition hover:opacity-90 sm:gap-1.5 sm:px-3 sm:py-2.5 sm:text-xs"
-          >
-            <MessageCircle className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
-            Chat
-          </a>
+
         </div>
       </div>
     </motion.article>
@@ -1370,23 +1350,7 @@ function Contact() {
               </div>
               <span className="text-sm font-semibold text-gold">Tap to call →</span>
             </a>
-            <a
-              href={WA}
-              target="_blank"
-              rel="noopener"
-              className="flex items-center justify-between rounded-2xl glass-strong p-5 shadow-soft transition hover:scale-[1.02]"
-            >
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-whatsapp text-white shadow-glow">
-                  <MessageCircle className="h-5 w-5" />
-                </div>
-                <div>
-                  <div className="text-xs uppercase tracking-wider text-muted-foreground">WhatsApp</div>
-                  <div className="font-display text-lg font-bold">Chat instantly</div>
-                </div>
-              </div>
-              <span className="text-sm font-semibold text-whatsapp">Open chat →</span>
-            </a>
+
             <div className="flex items-center gap-4 rounded-2xl glass p-5">
               <div className="flex h-12 w-12 items-center justify-center rounded-2xl bg-sky/30 text-foreground">
                 <MapPin className="h-5 w-5" />
@@ -1426,11 +1390,10 @@ function Contact() {
               .filter((l) => l !== null)
               .join("\n");
 
-            const waUrl = `https://wa.me/919555544416?text=${encodeURIComponent(lines)}`;
             setSent(true);
-            // Small delay so user sees success state before WhatsApp opens
+            // Small delay so user sees success state before call initiates
             setTimeout(() => {
-              window.open(waUrl, "_blank", "noopener,noreferrer");
+              window.location.href = `tel:${PHONE}`;
               setSent(false);
             }, 800);
           }}
@@ -1460,17 +1423,15 @@ function Contact() {
             <button
               type="submit"
               disabled={sent}
-              className={`inline-flex w-full items-center justify-center gap-2 rounded-full py-3.5 text-sm font-semibold text-white shadow-soft transition hover:scale-[1.02] disabled:scale-100 disabled:opacity-80 ${
-                sent ? "bg-whatsapp" : "bg-whatsapp"
-              }`}
+              className={`inline-flex w-full items-center justify-center gap-2 rounded-full py-3.5 text-sm font-semibold text-white shadow-soft transition hover:scale-[1.02] disabled:scale-100 disabled:opacity-80 bg-gradient-to-br from-amber-500 to-yellow-600`}
             >
               {sent ? (
                 <>
-                  <CheckCircle2 className="h-4 w-4" /> Opening WhatsApp…
+                  <CheckCircle2 className="h-4 w-4" /> Calling…
                 </>
               ) : (
                 <>
-                  <MessageCircle className="h-4 w-4" /> Send via WhatsApp
+                  <Phone className="h-4 w-4" /> Call Us Now
                 </>
               )}
             </button>
@@ -1539,9 +1500,7 @@ function Footer() {
             <a href={`tel:${PHONE}`} className="inline-flex items-center gap-2 rounded-full bg-foreground px-4 py-2 text-xs font-semibold text-background">
               <Phone className="h-3.5 w-3.5" /> {PHONE_DISPLAY}
             </a>
-            <a href={WA} target="_blank" rel="noopener" className="inline-flex items-center gap-2 rounded-full bg-whatsapp px-4 py-2 text-xs font-semibold text-white">
-              <MessageCircle className="h-3.5 w-3.5" /> WhatsApp
-            </a>
+
           </div>
         </div>
         <div>
@@ -1579,21 +1538,7 @@ function Footer() {
 function FloatingActions() {
   return (
     <div className="fixed bottom-20 right-4 z-50 flex flex-col gap-3 sm:bottom-6 sm:right-6">
-      <motion.a
-        href={WA}
-        target="_blank"
-        rel="noopener"
-        aria-label="Chat on WhatsApp"
-        initial={{ scale: 0 }}
-        animate={{ scale: 1 }}
-        transition={{ delay: 1.2, type: "spring" }}
-        className="group relative flex h-12 w-12 items-center justify-center rounded-full bg-whatsapp text-white shadow-glow sm:h-14 sm:w-14"
-      >
-        <span className="absolute inset-0 animate-ping rounded-full bg-whatsapp/40" />
-        <svg className="relative h-6 w-6 sm:h-7 sm:w-7" viewBox="0 0 32 32" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <path d="M16 0C7.163 0 0 7.163 0 16c0 2.826.736 5.484 2.027 7.796L0 32l8.425-2.01A15.938 15.938 0 0016 32c8.837 0 16-7.163 16-16S24.837 0 16 0zm0 29.333a13.27 13.27 0 01-6.766-1.847l-.486-.29-4.999 1.193 1.21-4.862-.315-.5A13.267 13.267 0 012.667 16C2.667 8.636 8.636 2.667 16 2.667S29.333 8.636 29.333 16 23.364 29.333 16 29.333zm7.279-9.875c-.398-.2-2.355-1.162-2.72-1.295-.366-.133-.632-.2-.898.2-.266.399-1.031 1.295-1.264 1.561-.232.266-.465.3-.863.1-.398-.2-1.68-.619-3.2-1.974-1.183-1.055-1.981-2.358-2.213-2.757-.232-.399-.025-.615.174-.814.179-.178.398-.465.598-.698.2-.232.266-.399.399-.665.132-.266.066-.499-.033-.698-.1-.2-.898-2.163-1.23-2.961-.324-.778-.653-.673-.898-.686l-.765-.013c-.266 0-.699.1-1.065.499-.366.399-1.397 1.365-1.397 3.328s1.43 3.86 1.629 4.126c.2.266 2.814 4.295 6.818 6.025.953.412 1.696.658 2.275.842.956.305 1.826.262 2.515.159.767-.115 2.355-.963 2.688-1.893.333-.93.333-1.727.232-1.893-.1-.166-.366-.266-.765-.465z"/>
-        </svg>
-      </motion.a>
+
       <motion.a
         href={`tel:${PHONE}`}
         aria-label="Call now"
